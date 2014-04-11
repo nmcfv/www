@@ -1,18 +1,21 @@
-<base target="_parent" />
-
 <style>
-.menu {
-	font-family: Arial, sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin: 0px 0;
+nav ul ul {
+	display: none;
+	background: #eee;
+	border-radius: 0px; 
 	padding: 0;
-	list-style-type: none;
-	background-color: #eee;
+	position: absolute;
+	top: 100%;
+	text-transform: none;
+	width: 170px;
+	font-weight: normal;
+}
+
+nav ul {
+	font-family: Arial, sans-serif;
 	font-size: 13px;
-	height: 40px;
-	border-top: 2px solid #eee;
-	border-bottom: 2px solid #ccc;
+	background: #eee;
+	text-transform: uppercase;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topright: 10px;
 	border-top-right-radius: 10px;
@@ -25,15 +28,66 @@
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-left-radius: 10px;
+	padding: 0 20px;
+	list-style: none;
 	position: relative;
+	display: inline-table;
+	display: block;
+	margin: 0 auto;
+	width: 742px;
+	font-weight:bold;
 }
 
-.menu .first {
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
 	float: left;
-	margin: 0px 0px 0px 15px;
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
 }
 
-.menu .donate {
+nav ul li a {
+	display: block;
+	padding: 11px 20px;
+	color: #666;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background: #f5f5f5;
+	border-bottom: 2px solid #DDD;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	
+	-webkit-animation: fadein 350ms; /* Safari and Chrome */
+	-moz-animation: fadein 350ms; /* Firefox */
+	-ms-animation: fadein 350ms; /* Internet Explorer */
+	-o-animation: fadein 350ms; /* Opera */
+	animation: fadein 350ms;
+}
+
+nav ul ul li {
+	float: none;
+	border-bottom: 2px solid #eee;
+	border-top: 2px solid #eee;
+	position: relative;
+	text-align:center;
+}
+
+nav ul ul li a {
+	padding: 11px 25px;
+	color: #666;
+}
+
+nav ul ul li a:hover {
+	background: #f5f5f5;
+}
+
+.donate {
 	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
 	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
@@ -61,8 +115,8 @@
 	font-size:15px;
 	font-weight:bold;
 	font-style:normal;
-	height:30px;
-	line-height:33px;
+	height:8px;
+	line-height:10px;
 	width:60px;
 	text-decoration:none;
 	text-align:center;
@@ -73,7 +127,7 @@
 	right: 10px
 }
 
-.menu .donate:hover {
+.donate:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
 	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
@@ -81,41 +135,51 @@
 	color:#ffffff;
 }
 
-.menu .donate:active {
+.donate:active {
 	position:absolute;
 	right:10px;
-	top:1px;
+	top:3px;
 	color:#ffffff;
 }
 
-.menu li {
-	float: left;
-	margin: 0px 0px ;
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.menu li a {
-	text-decoration: none;
-	display: block;
-	padding: 0 20px;
-	line-height: 40px;
-	color: #666;
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-.menu li a:hover, .menu li.active a {
-	background-color: #f5f5f5;
-	border-bottom: 2px solid #DDD;
-	color: #999;
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
 </style>
 
+<div class="nav">
 <nav>
-<div class="left"></div>
-<ul class="menu">
-<li><a class="first" href="../index.php?content=home">Home</a></li>
-<li><a href="../index.php?content=events">Events</a></li>
-<li><a href="../index.php?content=issues">Our Issues</a></li>
-<li><a href="../index.php?content=people">Board/Staff</a></li>
-<li><a href="../index.php?content=contact">Contact Us</a></li>
-<li><a class="donate" href="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=227158848654">Donate</a></li>
+<ul>
+<li><a href="./index.php?content=home">Home</a></li>
+<li><a href="./index.php?content=people">Churches/Pastors</a></li>
+<li><a href="./index.php?content=issues">Our Issues</a></li>
+<li><a href="./index.php?content=contact">Contact Us</a></li>
+<li><a class="donate" href="https://www.sagepayments.net/eftcart/forms/donate.asp?M_id=681553574625">Donate</a></li>
 </ul>
 </nav>
+</div>
