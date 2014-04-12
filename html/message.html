@@ -1,10 +1,105 @@
+<style>
+.show_more {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #6F6F6F;
+	cursor: pointer;
+}
+
+.show_more:hover {
+	color: #9E9E9E;
+}
+</style>
+
 <div class="font" style="padding:10px">
 <p style="font-size:26px; font-weight:bold; text-align:center; margin-top: 0px;">Message from the Executive Director</p>
-<img src="./images/people/Leslie.jpg" alt="Leslie Cumiford" style="float:left; margin-top: 6px; margin-right:10px; margin-bottom: 10px"/>
+<img src="./images/people/Leslie.jpg" alt="Leslie Cumiford" style="float:left; margin-top: 6px; margin-right:10px; margin-bottom: 10px; width: 160px;"/>
 
-MESSAGE...<p />
+I am thrilled to take the helm of the NM Center for Family Values, formerly known as Voices 
+for Family Values, Inc. Our Board of Directors has launched a new level of operations 
+to meet the challenges of the next decade, and I commend them for it. In part, that 
+direction led to our new name, the moving of our headquarters from Farmington to 
+Albuquerque, and the planning of a whole new level of involvement for churches, civic 
+groups and individuals. 
 
-Leslie Cumiford<p />
+<div class="more" id="Message">
+<p />
+Chris Donnelly will remain an integral part of our organization. I would like to thank him 
+for his tireless efforts on behalf of life, marriage, the family and religious freedom 
+over the last few years. What I appreciate most about Chris, as well as our Board, is the 
+heart that they bring to the issues. Chris and our Board members are involved because they 
+are firmly committed to serving the Lord by restoring our society to a culture that values 
+the institution of marriage as God set it up, the family as the first and best teacher 
+about life and faith, and the understanding that every life is a gift from God with 
+intrinsic value. They are keenly aware that we must uphold these values, along with the 
+freedom to express them, if we are to remain a cogent and thriving society which is the 
+envy of the entire world. We have seen plenty of examples of society unhinged throughout 
+the ages, and we are committed to doing everything that we can to redirect the path of 
+our society to a higher calling.<p />
 
-Executive Director<p />
+In light of the recent decision by World Vision to support same-sex couples (which was 
+quickly retracted), I want assure you that at the heart of our organization remains 
+the staunch commitment to serve New Mexico by supporting life, traditional marriage, 
+the family unit and religious freedom. We do so by educating the public and networking 
+with other organizations regarding the advantages of supporting life, traditional 
+marriage, family and religious freedom and the dangers of veering from this course. We 
+also keep New Mexicans informed on a timely basis regarding issues at all levels – 
+municipal, state and federal – that impact family values and religious freedom. To better 
+accomplish these goals, we need an army of volunteers networked throughout the state. 
+Over the next few weeks, we will be developing our website and social media outreach 
+to render it easier for you to get involved. I invite you to contact us to find out 
+more about the ways in which you can make a difference. We will give you the training 
+and know-how that you need to succeed, and you will be joining a community of like-minded 
+champions of family values.<p />
+
+Your input and prayers are welcome and valued as we ramp up to the challenges ahead. 
+After all, a handful of us, no matter how talented, cannot accomplish the daunting 
+task before us. However, as a community, through God’s wisdom and direction and by 
+His power, we know this transformation is possible. I remind you of Rome. Christians 
+were in the minority at the time of Christ, a small band of believers following the 
+Messiah. Within a handful of years, Christians went from those likely to be persecuted 
+or relegated to the lower rungs of society to those likely to be preferred for high 
+government positions. Roman society turned from rampant sexual practices, abortion 
+for convenience and sex selection, and slavery to intact family units with adults 
+who valued life and a society that rejected slavery. God and His people have triumphed 
+in this way time and time again, and we have every reason to expect that He will do 
+it again, right here in New Mexico.<p />
+
+As I prayed about this opportunity, the Scripture that most spoke to me was from Isaiah 
+57. The first half of this chapter describes a situation in which the righteous perish, 
+various sexual proclivities abound while participants sneer and mock, children are 
+sacrificed and idols are worshipped. But then (verse 13) the people begin to take 
+refuge in the Lord, and it is said (verse 14) “Build up, build up, prepare 
+the road! Remove the obstacles out of the way of my people.” The Lord then 
+promises to heal them, guide them and restore comfort to them.<p />
+
+As we build the road and remove the obstacles to restore the Land of Enchantment, we 
+invite you to join us, living a life worthy of the Lord’s pleasure when he says, 
+"Well done, good and faithful servant."
 </div>
+[<a class="show_more" id="Message">more</a>]
+
+<p />
+Leslie Cumiford<p />
+Executive Director<br />
+(505) 261-9566<br />
+leslie@nmcfv.com<br />
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".more").hide();
+	
+	$(".show_more").click(function() {
+		var profile = $(this).attr('id');
+		if ($("#"+profile+".more").is(":visible")) {
+			$("#"+profile+".more").hide();
+			$(this).text("more");
+		}
+		else {
+			$("#"+profile+".more").show();
+			$(this).text("less");
+		}
+	});
+});	
+</script>
