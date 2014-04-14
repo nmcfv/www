@@ -22,8 +22,9 @@
 
 	# permanent fixtures
 	if ($content == "home") {include './html/home.html'; $found = 1;}
-	if ($content == "people") {include './html/people.html'; $found = 1;}
+	if ($content == "churches") {include './html/churches.html'; $found = 1;}
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
+	if ($content == "people") {include './html/people.html'; $found = 1;}
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
 	
 	# temporary pages
