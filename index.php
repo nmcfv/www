@@ -29,6 +29,7 @@
 	
 	# temporary pages
 	if ($content == "message") {include './html/message.html'; $found = 1;}
+	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
 	
 	# events
 	if ($content == "colson") {include './html/colson.html'; $found = 1;}
@@ -38,6 +39,7 @@
 	}
 	
 	print "</div>";
+	include './html/social.html';
 ?>
 
 <footer>
