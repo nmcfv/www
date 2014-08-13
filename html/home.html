@@ -1,5 +1,5 @@
 <style>
-.picture {	
+.home_picture {	
 	float:left;
 	width: 425px;
 	height: 275px;
@@ -46,137 +46,100 @@
      margin: 13px 0;
 }
 
-.add {
-	margin-left:10px; margin-right:10px; margin-bottom:10px;
-	float:left;
-	border:3px solid #eee;
-	-webkit-border-top-left-radius:10px;
-	-moz-border-radius-topleft:10px;
-	border-top-left-radius: 10px;
-	-webkit-border-top-right-radius:10px;
-	-moz-border-radius-topright:10px;
-	border-top-right-radius:10px;
-	-webkit-border-bottom-right-radius:10px;
-	-moz-border-radius-bottomright:10px;
-	border-bottom-right-radius:10px;
-	-webkit-border-bottom-left-radius:10px;
-	-moz-border-radius-bottomleft:10px;
-	border-bottom-left-radius:10px;
-	padding: 10px;
-	font-family: "Comic Sans MS";
-	font-size: 16px;
+input {
+    outline: none;
+}
+
+.ad_button {
+    position: absolute;
+    bottom: 14px;
+    right: 10px;
+}
+
+.ad_button:active {
+    top: auto;
+    position: absolute;
+    bottom: 13px;
+}
+
+.subscribe {
+    display: block;
+    margin: 0 auto;
+    width: 230px;
+}
+
+.subscribe td {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75%;
+}
+
+.subscribe .text {
+    width: 25%;
+}
+
+.subscribe td input {
+    -webkit-border-top-left-radius:7px;
+    -moz-border-radius-topleft:7px;
+    border-top-left-radius:7px;
+    -webkit-border-top-right-radius:7px;
+    -moz-border-radius-topright:7px;
+    border-top-right-radius:7px;
+    -webkit-border-bottom-right-radius:7px;
+    -moz-border-radius-bottomright:7px;
+    border-bottom-right-radius:7px;
+    -webkit-border-bottom-left-radius:7px;
+    -moz-border-radius-bottomleft:7px;
+    border-bottom-left-radius:7px;
+    border: 2px solid white;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    -webkit-filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.5));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.splash {
+	font-family: Arial, sans-serif;
 	font-weight: bold;
-	text-align: right;
-	color: black;
-	height: 110px;
-	width: 221px;
-	-webkit-filter: drop-shadow(0px 5px 6px rgba(0,0,0,0.5));
-	position: relative;
-}
-
-.add a {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
-	background-color:#ededed;
-	-webkit-border-top-left-radius:7px;
-	-moz-border-radius-topleft:7px;
-	border-top-left-radius:7px;
-	-webkit-border-top-right-radius:7px;
-	-moz-border-radius-topright:7px;
-	border-top-right-radius:7px;
-	-webkit-border-bottom-right-radius:7px;
-	-moz-border-radius-bottomright:7px;
-	border-bottom-right-radius:7px;
-	-webkit-border-bottom-left-radius:7px;
-	-moz-border-radius-bottomleft:7px;
-	border-bottom-left-radius:7px;
-	text-indent:0;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#777777;
-	font-family:arial;
-	font-size:12px;
-	font-weight:bold;
-	font-style:normal;
-	height:29px;
-	line-height:29px;
-	width:85px;
-	text-decoration:none;
+        margin-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	padding: 10px;
+	background-color: #FFCC00;
+	font-size: 14px;
+	line-height:20px;
+	height: 20px;
+        width: 762px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+        -webkit-filter: drop-shadow(8px 8px 6px rgba(0,0,0,0.5));
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
-	position: absolute;
-	bottom: 14px;
-	right: 10px;
-}
-
-.add a:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
-	background-color:#dfdfdf;
-}
-
-.add a:active {
-	position: absolute;
-	bottom: 13px;
-}
-
-.subscribe .button {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
-	background-color:#ededed;
-	-webkit-border-top-left-radius:7px;
-	-moz-border-radius-topleft:7px;
-	border-top-left-radius:7px;
-	-webkit-border-top-right-radius:7px;
-	-moz-border-radius-topright:7px;
-	border-top-right-radius:7px;
-	-webkit-border-bottom-right-radius:7px;
-	-moz-border-radius-bottomright:7px;
-	border-bottom-right-radius:7px;
-	-webkit-border-bottom-left-radius:7px;
-	-moz-border-radius-bottomleft:7px;
-	border-bottom-left-radius:7px;
-	text-indent:0;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#777777;
-	font-family:arial;
-	font-size:12px;
-	font-weight:bold;
-	font-style:normal;
-	height:29px;
-	line-height:29px;
-	width:85px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
-}
-
-.subscribe .button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
-	background-color:#dfdfdf;
-}
-
-.subscribe .button:active {
-	position: relative;
-	top: 1px;
+	color: #000000;
 }
 </style>
 
-<iframe class="splash" src="./html/splash.html" seamless="yes"></iframe>
+<a id="message" href="#" style="text-decoration:none;z-index:-1">
+<div class="splash">
+VFFV is now NMCFV - click here for a message from the Executive Director
+</div>
+</a>
 
-<div class="picture">
+<div class="home_picture">
 <img src="./images/cover_photo.gif" class="picture" style="margin-left:10px; margin-right:10px; margin-bottom:10px;"/>
 </div>
 
@@ -188,25 +151,61 @@ you understand just how much the family matters and keep up to date on how the f
 culture.
 </div>
 
-<div class="add" style="background: linear-gradient(to top, #FFFFFF 30%, #FF0000 70%); font-size:12px;">
+<div class="ad" style="background: linear-gradient(to top, #FFFFFF 30%, #FF0000 70%); font-size:12px;">
 <div class="shadow" style="float:left; position:relative; bottom: 6px;"><img src="./images/colson.png"></div>
 <div>Chuck Colson on the New Mexico Biblical Worldview</div>
-<a href="./index.php?content=colson">Learn More</a>
+<a class="silver_button ad_button" id="colson" href="#">Learn More</a>
 </div>
-<div class="add" style="background: linear-gradient(to top, #FFFFFF 30%, #33CCFF 70%);">
+<div class="ad" style="background: linear-gradient(to top, #FFFFFF 30%, #33CCFF 70%);">
 <div class="shadow" style="float:left; margin-left:10px"><img src="./images/mailbox.png"></div>
 <div>
 Give us your <br />Feedback
-<a href="./index.php?content=contact">Contact Us</a>
+<a class="silver_button ad_button" id="contact" href="#">Contact Us</a>
 </div>
 
 </div>
-<div class="add" style="background: linear-gradient(to top, #FFFFFF 30%, #FFCC00 70%);">
+<div class="ad" style="background: linear-gradient(to top, #FFFFFF 30%, #FFCC00 70%);">
 <div class="shadow" style="float:left; margin-left:3px"><img src="./images/vote.png"></div>
 <div>Get registered<br />to vote!</div>
-<a href="https://www.pioneersolutionsinc.com/account/votertools/regform1?gid=41&ccode=">Click Here</a>
+<a class="silver_button ad_button" href="https://www.pioneersolutionsinc.com/account/votertools/regform1?gid=41&ccode=">Click Here</a>
 </div>
 
 <center class="font" style="font-weight:bold;font-size:20px;">Sign up for our mailing list</center>
 
-<iframe class="subscribe" src="./html/subscribe.html" seamless="yes"></iframe>
+<form method="post" action="../subscribe.php">
+<table class="subscribe">
+<tr>
+<td class="text">Name:</td><td><input type="text" name="Name" class="name" size="20"></td>
+</tr><tr>
+<td class="text">Email<font style="color:red">*</font>:</td><td><input type="email" name="Email" class="email" size="20"></td>
+</tr>
+</table>
+<input type="submit" value="Subscribe" style="display: block; margin: 0 auto; margin-top: 6px;" class="silver_button" />
+</form>
+
+<script src="./jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("form").submit(function() {
+		var flag = 0;
+		
+		if ($(".email").val() == "") {
+			$(".email").css("border","2px solid red");
+			$(".email").attr("placeholder","please enter an email");
+			flag = 1;
+		}
+		else $(".email").css("border","2px solid green");
+		
+		if ($(".name").val() != '' && $(".name").val().match(/[^-\sa-zA-Z]/)) {
+			$(".name").css("border","2px solid red");
+			$('.name').removeAttr('readonly').val('');
+			$(".name").attr("placeholder","invalid character");
+			flag = 1;
+		}
+		else $(".name").css("border","2px solid green");
+		
+		if (flag) return false;
+		else return true;
+	});
+});
+</script>

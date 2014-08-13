@@ -68,7 +68,7 @@ it again, right here in New Mexico.<p />
 As I prayed about this opportunity, the Scripture that most spoke to me was from Isaiah 
 57. The first half of this chapter describes a situation in which the righteous perish, 
 various sexual proclivities abound while participants sneer and mock, children are 
-sacrificed and idols are worshipped. But then (verse 13) the people begin to take 
+sacrificed and idols are worshiped. But then (verse 13) the people begin to take 
 refuge in the Lord, and it is said (verse 14) “Build up, build up, prepare 
 the road! Remove the obstacles out of the way of my people.” The Lord then 
 promises to heal them, guide them and restore comfort to them.<p />
@@ -86,20 +86,18 @@ Executive Director<br />
 leslie@nmcfv.com<br />
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".more").hide();
-	
-	$(".show_more").click(function() {
-		var profile = $(this).attr('id');
-		if ($("#"+profile+".more").is(":visible")) {
-			$("#"+profile+".more").hide();
-			$(this).text("more");
-		}
-		else {
-			$("#"+profile+".more").show();
-			$(this).text("less");
-		}
-	});
-});	
+<script id="hide" type="text/javascript">
+$(".more").hide();
+
+$(".show_more").click(function() {
+    var profile = $(this).attr('id');
+    if ($("#"+profile+".more").is(":visible")) {
+        $("#"+profile+".more").hide();
+        $(this).text("more");
+    }
+    else {
+        $("#"+profile+".more").show();
+        $(this).text("less");
+    }
+});
 </script>

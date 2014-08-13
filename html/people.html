@@ -33,7 +33,7 @@ bold {
 
 <div class="font" style="padding:10px">
 
-<p style="font-size:26px; font-weight:bold; text-align:center; margin-top: 0px;">NMCFP Board of Directors 2014</p>
+<p style="font-size:26px; font-weight:bold; text-align:center; margin-top: 0px;">NMCFV Board of Directors 2014</p>
 
 <table class="staff">
 <tr>
@@ -141,7 +141,7 @@ Jemez Pueblo, where she is farming on her family's plots.</m>
 </table>
 
 <hr /><br />
-<p style="font-size:26px; font-weight:bold; text-align:center; margin-top: 0px;">NMCFP Staff</p>
+<p style="font-size:26px; font-weight:bold; text-align:center; margin-top: 0px;">NMCFV Staff</p>
 
 <table class="staff">
 <tr>
@@ -181,20 +181,18 @@ to other areas of vocational pursuit. It has truly been a pleasure to work with 
 </table>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".more").hide();
-	
-	$(".show_more").click(function() {
-		var profile = $(this).attr('id');
-		if ($("#"+profile+".more").is(":visible")) {
-			$("#"+profile+".more").hide();
-			$(this).text("more");
-		}
-		else {
-			$("#"+profile+".more").show();
-			$(this).text("less");
-		}
-	});
-});	
+<script id="hide" type="text/javascript">
+$(".more").hide();
+
+$(".show_more").click(function() {
+        var profile = $(this).attr('id');
+        if ($("#"+profile+".more").is(":visible")) {
+                $("#"+profile+".more").hide();
+                $(this).text("more");
+        }
+        else {
+                $("#"+profile+".more").show();
+                $(this).text("less");
+        }
+});
 </script>
