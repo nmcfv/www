@@ -27,14 +27,14 @@
 	if ($content == "issues") {include './html/issues.html'; $found = 1;}
 	if ($content == "people") {include './html/people.html'; $found = 1;}
 	if ($content == "contact") {include './html/contact.html'; $found = 1;}
-	
+      	if ($content == "coming_soon") {include './html/coming_soon.html'; $found = 1;}
+        
 	# events
 	if ($content == "colson") {include './html/colson.html'; $found = 1;}	
 	
         # vote 2014
         if ($content == "vote") {include './html/vote/vote.html'; $found = 1;}
         if ($content == "call_to_vote") {include './html/vote/call_to_vote.html'; $found = 1;}
-          
         
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
