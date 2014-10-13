@@ -98,3 +98,37 @@ $("body").on("click","#message",function(e) {
     xmlhttp.open("GET","./html/message.html",true);
     xmlhttp.send();
 });
+
+$("body").on("click","#coming_soon",function(e) {
+    e.preventDefault();
+
+    if (history.state.link !== "coming_soon") {
+        history.pushState({link:"coming_soon"},null,"index.php?content=coming_soon");
+    }
+    
+    xmlhttp.open("GET","./html/coming_soon.html",true);
+    xmlhttp.send();
+});
+
+// ---------------- VOTE 2014 PAGE ---------------- //
+$("body").on("click","#vote",function(e) {
+    e.preventDefault();
+
+    if (history.state.link !== "vote") {
+        history.pushState({link:"vote"},null,"index.php?content=vote");
+    }
+    
+    xmlhttp.open("GET","./html/vote/vote.html",true);
+    xmlhttp.send();
+});
+
+$("body").on("click","#call_to_vote",function(e) {
+    e.preventDefault();
+
+    if (history.state.link !== "call_to_vote") {
+        history.pushState({link:"call_to_vote"},null,"index.php?content=call_to_vote");
+    }
+    
+    xmlhttp.open("GET","./html/vote/call_to_vote.html",true);
+    xmlhttp.send();
+});

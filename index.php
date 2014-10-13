@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>New Mexico CFP</title>
+<title>New Mexico CFV</title>
 <link rel="icon" type="image/png" href="./images/title.png" />
 <script src="./html/jquery-1.11.0.min.js"></script>
 </head>
@@ -31,6 +31,11 @@
 	# events
 	if ($content == "colson") {include './html/colson.html'; $found = 1;}	
 	
+        # vote 2014
+        if ($content == "vote") {include './html/vote/vote.html'; $found = 1;}
+        if ($content == "call_to_vote") {include './html/vote/call_to_vote.html'; $found = 1;}
+          
+        
 	# misc temp
 	if ($content == "message") {include './html/message.html'; $found = 1;}
 	
