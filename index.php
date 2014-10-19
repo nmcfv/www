@@ -11,6 +11,18 @@
 <body>
 <div class="page">
 
+<!--[if lt IE 10]>
+<div class="font" style="padding:10px; text-align:center; width:500px; margin:0 auto; display:block;">
+<p style="font-size:26px; font-weight:bold; margin-top: 0px;">Whoops!</p>
+You appear to be using an unsupported/out of date browser (such as IE9 or 
+earlier). Please consider upgrading to a modern browser such as 
+<a class="link" href="https://www.google.com/chrome/browser/#eula">Chrome</a> or 
+<a class="link" href="https://www.mozilla.org/en-US/firefox/new/?utm_source=firefox-com&utm_medium=referral">Firefox</a> 
+or updating to the <a class="link" href="http://www.microsoft.com/en-us/download/internet-explorer-11-details.aspx">most recent version of Internet Explorer<a>.
+</div>
+<script type="text/undefined">
+<![endif]-->
+    
 <?php
         print '<div class="banner"></div>';
 	include './html/nav.html';
