@@ -44,14 +44,7 @@ or updating to the <a class="link" href="http://www.microsoft.com/en-us/download
         
 	# events
 	if ($content == "colson") {include './html/colson.html'; $found = 1;}	
-	
-        # vote 2014
-        if ($content == "vote") {include './html/vote/vote.html'; $found = 1;}
-        if ($content == "call_to_vote") {include './html/vote/call_to_vote.html'; $found = 1;}
-        
-	# misc temp
-	if ($content == "message") {include './html/message.html'; $found = 1;}
-	
+
 	if ($found == 0) {
 		echo "<center>Error: page not found.</center>";
 	}
